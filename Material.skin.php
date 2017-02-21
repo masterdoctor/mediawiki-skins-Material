@@ -8,6 +8,7 @@
  * @author MtmNC
  * @author Jack Phoenix
  * @author George Barnick
+ * @author Sam Mearns
  */
 
 class SkinMaterial extends SkinTemplate {
@@ -35,6 +36,14 @@ class MaterialTemplate extends BaseTemplate {
 		global $wgVersion;
 		$this->html( 'headelement' );
 		?>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		<style>
+		.mw-body-content {
+			margin: 5em 2em 2em calc(250px + 3.25em) !important;
+			width: auto !important;
+		}
+		</style>
 		<header id="mw-md-ui-component-header" role="group">
 			<a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'mw-logo-link' ) ) ?>> <!-- logo link -->
 				<img id="mw-logo-image" role="banner" src="<?php $this->text( 'logopath' ); ?>" alt="<?php $this->text( 'sitename' ) ?>" />

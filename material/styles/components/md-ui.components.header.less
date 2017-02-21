@@ -4,7 +4,7 @@
 	color: rgba(0,0,0,.87);
 	width: 100%;
 	position: fixed;
-	z-index: 2;
+	z-index: 5;
 	> a:first-child img {
 		display: none;
 	}
@@ -23,7 +23,7 @@
 			border-radius: .125em;
 			font-family: "Roboto", Arial, "Helvetica Neue", "Helvetica", sans-serif;
 			font-size: 1em;
-			padding: .5em 1em .5em 3em;
+			padding: .5em 1em .5em 1em;
 			transition: .2s ease-in-out;
 		}
 		button[type="submit"] {
@@ -38,9 +38,16 @@
 			height: 40px;
 			border-radius: 50%;
 		}
+		.avatar i {
+			font-size: 35px;
+	    position: relative;
+	    color: white;
+		}
 		.username {
 			color: #fff;
 			margin: 0 1.25em 0 .5em;
+			position: relative;
+			top: -13px;
 		}
 	}
 }
