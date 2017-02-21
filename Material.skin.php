@@ -43,6 +43,10 @@ class MaterialTemplate extends BaseTemplate {
 			margin: 5em 2em 2em calc(250px + 3.25em) !important;
 			width: auto !important;
 		}
+		
+		#mw-md-ui-component-footer {
+			width: calc(100% - 250px) !important;
+		}
 		</style>
 		<header id="mw-md-ui-component-header" role="group">
 			<a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ); ?>" <?php echo Xml::expandAttributes( Linker::tooltipAndAccesskeyAttribs( 'mw-logo-link' ) ) ?>> <!-- logo link -->
